@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//주석
 struct ContentView: View {
     var seller: Seller
     
