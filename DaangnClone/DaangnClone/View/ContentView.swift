@@ -1,47 +1,37 @@
-//
-//  ContentView.swift
-//  DaangnClone
-//
-//  Created by 최하은 on 2023/10/08.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var seller: Seller
-    
+    @State private var offsetY: CGFloat = CGFloat.zero
+
     var body: some View {
         ZStack {
-            ScrollView {
-                VStack{
-                    ImageScrollView(seller: Seller())
-                        .frame(height: UIScreen.main.bounds.height * 0.5)
-                    ProfileView(seller: Seller())
-                    SellingView(seller: Seller())
-                    
-                    HStack{
-                        Text("거래 희망 장소")
-                            .bold()
-                        Spacer()
-                        Text(seller.region)
-                        Image(systemName: "chevron.right")
+            VStack {
+                ScrollView {
+                    VStack{
+                        GeometryReader { geometry in
+                            let offset = geometry.frame(in: .global).minY
+
+                            ImageScrollView(seller: Seller())
+                                .frame(height: UIScreen.main.bounds.height * 0.5 + (offset > 0 ? offset : 0))
+                                .offset(y: (offset > 0 ? -offset : 0))
+                            
+                        }.frame(minHeight: UIScreen.main.bounds.height * 0.5)
+                        
+                        SellingView(seller: Seller())
+                        
+                        Divider()
+                        
                     }
-                    .padding(.top)
-                    .padding(.horizontal)
-                    
-                    MapView()
-                        .frame(height: 150)
-                        .padding()
-                        .cornerRadius(60)
-                    
-                }
-            }.ignoresSafeArea()
+                }.ignoresSafeArea()
                 
+                BottomNav(seller: Seller())
+            }
+            .ignoresSafeArea(edges: .bottom)
             
             VStack{
                 NavigationView()
                 Spacer()
-                BottomNav(seller: Seller())
             } .ignoresSafeArea(edges: .bottom)
         }
         

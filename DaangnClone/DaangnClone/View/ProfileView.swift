@@ -45,7 +45,6 @@ struct ProfileView: View {
             
             
         }
-        .padding()
     }
 }
 

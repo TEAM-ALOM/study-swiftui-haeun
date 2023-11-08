@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA64AFE32AD804B600A8818E /* DaangnCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA89D212AD2ABA00043574A /* DaangnCloneApp.swift */; };
 		FAA89D242AD2ABA00043574A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA89D232AD2ABA00043574A /* ContentView.swift */; };
 		FAA89D262AD2ABA30043574A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA89D252AD2ABA30043574A /* Assets.xcassets */; };
 		FAA89D292AD2ABA30043574A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA89D282AD2ABA30043574A /* Preview Assets.xcassets */; };
@@ -297,11 +298,11 @@
 				FAA89D242AD2ABA00043574A /* ContentView.swift in Sources */,
 				FAA89D542AD2D6A50043574A /* ImageScrollView.swift in Sources */,
 				FAA89D502AD2AE680043574A /* NavigationView.swift in Sources */,
+				FA64AFE32AD804B600A8818E /* DaangnCloneApp.swift in Sources */,
 				FAD7CF982AD6903C004E6878 /* BottomNav.swift in Sources */,
 				FAD7CF9C2AD6B5DB004E6878 /* SellingView.swift in Sources */,
 				FAD7CF9A2AD69F6D004E6878 /* ProfileView.swift in Sources */,
 				FAD7CF9E2AD6C0BF004E6878 /* MapView.swift in Sources */,
-				FAA89D222AD2ABA00043574A /* DaangnCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

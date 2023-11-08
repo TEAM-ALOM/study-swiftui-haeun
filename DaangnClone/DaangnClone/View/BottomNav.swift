@@ -9,13 +9,20 @@ import SwiftUI
 
 struct BottomNav: View {
     var seller: Seller
+    @State private var isSet = false
     
     var body: some View {
         VStack{
             Divider()
             
             HStack {
-                Image(systemName: "heart")
+                Button{
+                    isSet.toggle()
+                } label: {
+                    Label("Toggle Favorite", systemImage: isSet ? "heart.fill" : "heart")
+                }
+                .labelStyle(.iconOnly)
+                .foregroundColor(isSet ? .red : .gray)
                 
                 VStack(alignment: .leading){
                     Text(seller.price)
