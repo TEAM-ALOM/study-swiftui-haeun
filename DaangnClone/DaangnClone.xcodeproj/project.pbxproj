@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA055EF62AFBC9ED00037C35 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA055EF52AFBC9ED00037C35 /* ItemView.swift */; };
+		FA055EF82AFBD4C500037C35 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA055EF72AFBD4C500037C35 /* RecommendView.swift */; };
 		FA64AFE32AD804B600A8818E /* DaangnCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA89D212AD2ABA00043574A /* DaangnCloneApp.swift */; };
 		FAA89D242AD2ABA00043574A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA89D232AD2ABA00043574A /* ContentView.swift */; };
 		FAA89D262AD2ABA30043574A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA89D252AD2ABA30043574A /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA055EF52AFBC9ED00037C35 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		FA055EF72AFBD4C500037C35 /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
 		FAA89D1E2AD2ABA00043574A /* DaangnClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaangnClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA89D212AD2ABA00043574A /* DaangnCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaangnCloneApp.swift; sourceTree = "<group>"; };
 		FAA89D232AD2ABA00043574A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				FAD7CF992AD69F6D004E6878 /* ProfileView.swift */,
 				FAD7CF9B2AD6B5DB004E6878 /* SellingView.swift */,
 				FAD7CF9D2AD6C0BF004E6878 /* MapView.swift */,
+				FA055EF52AFBC9ED00037C35 /* ItemView.swift */,
+				FA055EF72AFBD4C500037C35 /* RecommendView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,7 +303,9 @@
 				FAA89D4E2AD2AD7A0043574A /* Seller.swift in Sources */,
 				FAA89D242AD2ABA00043574A /* ContentView.swift in Sources */,
 				FAA89D542AD2D6A50043574A /* ImageScrollView.swift in Sources */,
+				FA055EF62AFBC9ED00037C35 /* ItemView.swift in Sources */,
 				FAA89D502AD2AE680043574A /* NavigationView.swift in Sources */,
+				FA055EF82AFBD4C500037C35 /* RecommendView.swift in Sources */,
 				FA64AFE32AD804B600A8818E /* DaangnCloneApp.swift in Sources */,
 				FAD7CF982AD6903C004E6878 /* BottomNav.swift in Sources */,
 				FAD7CF9C2AD6B5DB004E6878 /* SellingView.swift in Sources */,

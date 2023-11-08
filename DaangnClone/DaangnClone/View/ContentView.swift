@@ -20,8 +20,7 @@ struct ContentView: View {
                         
                         SellingView(seller: Seller())
                         
-                        Divider()
-                        
+                        RecommendView()
                     }
                 }.ignoresSafeArea()
                 

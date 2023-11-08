@@ -23,3 +23,9 @@ struct Seller: Hashable, Codable {
     """
     var images: [String] = ["SellingImage1", "SellingImage2", "SellingImage3"]
 }
+
+struct Recommend: Hashable, Codable{
+    var images: [String] = ["OtherImage1", "OtherImage2", "OtherImage3", "OtherImage4", "OtherImage5"]
+    var title: [String] = ["애플워치 SE", "에어팟 프로", "춘식이 텀블러", "춘식이 거치 피규어", "춘식이 시계"]
+    var price: [String] = ["150,000", "130,000", "20,000", "10,000", "20,000"]
+}

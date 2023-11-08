@@ -12,7 +12,10 @@ struct SellingView: View {
     var body: some View {
         VStack(alignment: .leading) {
             ProfileView(seller: Seller())
-                .padding(.bottom)
+            
+            Divider()
+                .padding(.vertical)
+            
             Text(seller.title)
                 .font(.title3)
                 .bold()
