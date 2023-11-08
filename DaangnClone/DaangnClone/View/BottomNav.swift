@@ -25,7 +25,7 @@ struct BottomNav: View {
                 .foregroundColor(isSet ? .red : .gray)
                 
                 VStack(alignment: .leading){
-                    Text(seller.price)
+                    Text(seller.price + "원")
                         .fontWeight(.heavy)
                     Text("가격 제안 불가")
                         .font(.subheadline)

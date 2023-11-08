@@ -21,7 +21,7 @@ struct ItemView: View {
                 .cornerRadius(5)
             
             Text(recommend.title[idx])
-            Text(recommend.price[idx])
+            Text(recommend.price[idx] + "원")
                 .fontWeight(.bold)
         }
         
